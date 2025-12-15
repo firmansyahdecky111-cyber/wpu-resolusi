@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Untuk Kamu ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{
+      margin:0;
+      min-height:100vh;
+      background:linear-gradient(135deg,#ffb6c1,#ffc0cb,#ffd1dc);
+      font-family:'Comic Sans MS','Poppins',cursive;
+      display:flex;
+      justify-content:center;
+      padding:20px;
+    }
+
+    .container{
+      max-width:420px;
+      width:100%;
+    }
+
+    .card{
+      background:white;
+      padding:24px;
+      border-radius:24px;
+      text-align:center;
+      box-shadow:0 15px 40px rgba(255,105,180,0.35);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float{
+      0%,100%{transform:translateY(0)}
+      50%{transform:translateY(-8px)}
+    }
+
+    h1{color:#ff4d88;margin-bottom:8px}
+    p{color:#ff6f9c;font-size:15px}
+
+    .heart{
+      font-size:46px;
+      animation: beat 1s infinite;
+      margin:12px 0;
+    }
+
+    @keyframes beat{
+      0%,100%{transform:scale(1)}
+      50%{transform:scale(1.2)}
+    }
+
+    button{
+      background:linear-gradient(135deg,#ff4d88,#ff85b3);
+      border:none;
+      padding:12px 22px;
+      border-radius:999px;
+      color:white;
+      font-size:16px;
+      cursor:pointer;
+      margin-top:12px;
+      box-shadow:0 6px 15px rgba(255,77,136,0.4);
+    }
+
+    /* GALLERY */
+    .gallery{
+      margin-top:20px;
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:10px;
+    }
+
+    .gallery img{
+      width:100%;
+      height:140px;
+      object-fit:cover;
+      border-radius:16px;
+      box-shadow:0 6px 15px rgba(255,105,180,0.3);
+      transition:transform .2s;
+    }
+
+    .gallery img:hover{
+      transform:scale(1.05);
+    }
+
+    .footer{
+      text-align:center;
+      margin-top:14px;
+      font-size:13px;
+      color:#ff9bbd;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="card">
+    <h1>Hai Sayang 💖</h1>
+    <p>
+      isinya cuma cewe cantik doang🥰<br>
+      Scroll ke bawah yaaa ✨
+    </p>
+
+    <div class="heart">💗</div>
+
+    <button onclick="alert('semoga hari kamu weekend terus 💕')">Klik aku 😚</button>
+  </div>
+
+  <!-- GALERI FOTO -->
+  <div class="gallery">
+    <img src="background2.jpg" alt="foto 1">
+    <img src="image1.jpg" alt="foto 2">
+    <img src="image2.webp" alt="foto 3">
+    <img src="image3.jpg" alt="foto 4">
+    <!-- tambah foto tinggal copy baris ini -->
+    <!-- <img src="foto5.jpg"> -->
+  </div>
+
+  <div class="footer">making with heart 💕</div>
+
+</div>
+
+</body>
+</html>
